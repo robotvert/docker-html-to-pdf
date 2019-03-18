@@ -17,10 +17,10 @@ but this seems to work best.
 The workdir is `/tmp/html-to-pdf`, thus running:
 
 ```
-docker run -v /your-local-dir:/tmp/html-to-pdf --privileged pink33n/html-to-pdf --url http://google.com --pdf out.pdf
+docker run -v `pwd`:/tmp/html-to-pdf --privileged robotvert/docker-html-to-pdf --url http://google.com --pdf out.pdf
 ```
 
-Will produce `/your-local-dir/out.pdf` file.
+Will produce `out.pdf` file in the current directory.
 
 ## Version tags
 
